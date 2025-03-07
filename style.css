@@ -4,6 +4,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #fff;
 }
 
 nav ul {
@@ -14,15 +15,65 @@ nav ul {
   color: #fff;
 }
 
+nav ul li,
+button {
+  cursor: pointer;
+}
+
 #logo {
   max-width: 8rem;
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 button {
-    border: 2px solid #fff;
-    border-radius: 8px;
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.main-intro {
+  max-width: 60ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-intro p {
+  font-size: 1.2rem;
+}
+
+main img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.img-sec {
+  display: flex;
+  gap: 4rem;
+}
+
+.img-sec img {
+  max-width: 20rem;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
 }
