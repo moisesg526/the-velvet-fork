@@ -16,6 +16,10 @@ nav {
   padding: 2rem 0;
 }
 
+.small-screen {
+  display: none;
+}
+
 nav ul li img {
   border-radius: 4px;
 }
@@ -122,4 +126,39 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+/* @media screen and (max-width: 980px) {
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .large-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: contents;
+  }
+
+  .small-screen ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  main {
+    max-width: 40ch;
+  }
+
+  .content {
+    width: 100%;
+    padding: 2rem;
+  }
+  .img-sec img {
+    max-width: 8rem;
+  }
 }

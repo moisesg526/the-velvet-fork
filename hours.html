@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7fbee0115c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>The Velvet Fork</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="large-screen">
         <ul>
           <li>
             <a href="./index.html"
@@ -21,10 +25,24 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./menu.html">Menu</a></li>
-          <li><a href="">Hours & Location</a></li>
+          <li><a href="./about.html">Hours & Location</a></li>
           <li>
             <a href="./reservation.html"> <button>Reservations</button></a>
           </li>
+        </ul>
+      </nav>
+      <!-- Small Screen Navbar  -->
+      <nav class="small-screen">
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img
+                src="./images/the-velvet-fork.jpg"
+                alt="The Velvet Fork"
+                id="logo"
+            /></a>
+          </li>
+          <li><i class="fa-solid fa-bars"></i></li>
         </ul>
       </nav>
     </header>
